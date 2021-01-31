@@ -1,0 +1,26 @@
+{
+    "name": "devaissa/file-generator-command",
+    "description": "create classes and interfaces from command lines (php artisan)",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+    },
+    "authors": [
+        {
+            "name": "Sifoune aissa",
+            "email": "aissa23sifoune@gmail.com"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "Devaissa\\FileGeneratorServiceProvider\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devaiss\\Mail\\MailServiceProvider"
+            ]
+        }
+    }
+}
