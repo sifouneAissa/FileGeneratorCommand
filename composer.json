@@ -4,6 +4,7 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {
+        "flipbox/lumen-generator": "^8.2"
     },
     "authors": [
         {
