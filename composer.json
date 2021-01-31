@@ -13,14 +13,7 @@
     ],
     "autoload-dev": {
         "psr-4": {
-            "Devaissa\\FileGeneratorServiceProvider\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Devaiss\\Mail\\MailServiceProvider"
-            ]
+            "Devaissa\\FileGeneratorCommand\\": "src/"
         }
     }
 }
