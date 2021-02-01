@@ -2,7 +2,7 @@
 
 namespace Devaissa\FileGeneratorCommand\Console\Commands;
 
-use Flipbox\LumenGenerator\Console\GeneratorCommand;
+use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
 
 class MakeFile extends GeneratorCommand
