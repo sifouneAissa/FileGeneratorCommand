@@ -22,14 +22,7 @@
             "Devaissa\\FileGeneratorCommand\\": "src/FileGeneratorCommand"
         }
     }
-    ,
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Devaissa\\FileGeneratorCommand\\FileGeneratorServiceProvider"
-            ]
-        }
-    }
+    
     
 
 
