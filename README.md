@@ -20,7 +20,7 @@ $app->register(Devaissa\FileGeneratorCommand\FileGeneratorServiceProvider::class
 ## Available Command
 
 
-make:file name --cat=file-type (interface,class )            Create a new file (interface or class)
+make:file name --cat=file-type (interface,class,trait )            Create a new file (interface || class || trait)
 
 
 ```
