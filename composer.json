@@ -1,6 +1,6 @@
 {
     "name": "devaissa/file-generator-command",
-    "description": "create custom files from command lines (php artisan)",
+    "description": "create custom files from command line (php artisan)",
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {
