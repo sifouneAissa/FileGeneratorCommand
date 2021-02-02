@@ -6,7 +6,7 @@ Create custom files from command lines (php artisan)
 
 
 ```sh
-composer require devaissa/file-generator-command:"^1.1.0"
+composer require devaissa/file-generator-command:"^1.1.1"
 ```
 
 ## Configuration
