@@ -64,9 +64,14 @@ class MakeFile extends GeneratorCommand
 
     public function handle()
     {
-        
-        if (!$this->option('cat')){
+        $cat = $this->option('cat');
+
+        if (!$cat){
             $this->error('category is empty');
+            $this->error('--cat= '.implode(" || ",$this->stubs));
+            return false;
+        } if($cat && !in_array($cat,$this->stubs)){
+            $this->error('category is unavailable');
             $this->error('--cat= '.implode(" || ",$this->stubs));
             return false;
         }
