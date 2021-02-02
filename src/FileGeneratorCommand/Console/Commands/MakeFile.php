@@ -7,13 +7,13 @@ use Illuminate\Support\Str;
 
 class MakeFile extends GeneratorCommand
 {
-    
+  
      /**
      * The console command name.
      *
      * @var string
      */
-    protected $signature = 'make:file {name : The name of the class} {--cat= the type of the file}';
+    protected $signature = 'make:file {name : The name of the class} {--cat=}';
 
     /**
      * The console command description.
@@ -29,6 +29,12 @@ class MakeFile extends GeneratorCommand
      */
     protected $type = 'File';
 
+
+    protected $stubs = [
+        'interface',
+        'trait',
+        'class'
+    ];
     /**
      * Get the stub file for the generator.
      *
@@ -56,6 +62,17 @@ class MakeFile extends GeneratorCommand
     }
 
 
+    public function handle()
+    {
+        
+        if (!$this->option('cat')){
+            $this->error('category is empty');
+            $this->error('--cat= '.implode(" || ",$this->stubs));
+            return false;
+        }
+        
+        parent::handle();
+    }
  
 }
 
